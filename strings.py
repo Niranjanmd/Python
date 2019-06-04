@@ -10,7 +10,7 @@ print(course[-1]) #get the char at the end(last char) ----g
 
 print(course[0:3]) # get from 0th index to 3rd index excluding 3rd index char ---- pyt
 
-print(course[0:-1])  # get from 0th to last index ---- out Python Programmin
+print(course[0:-1])  # get from 0th to last index ---- Python Programmin
 
 print(course[:3])  # get from 0 to index 3 excluding 3rd index char ----pyt
 
