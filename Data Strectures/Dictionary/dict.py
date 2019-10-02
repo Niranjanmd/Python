@@ -1,25 +1,34 @@
-point = {"a": 1, "b": 2}  # declaration
+point = {"x": 1,"y": 1}
 print(point)
-print(point["a"])
 
-point_d = dict(x=1, y=2, z=30, a=0)  # using dict to declare dictionary
+point_d = dict(x=1,y=2)
 
-print(point_d["x"])
+point_d["x"]  = 10
+point_d["z"] =30
 
-if "b" in point_d:  # accessing the Key to avoid exception
-    print(point_d["x"])
+print(point_d)
 
-# one more way to access key if key not exist then it return NONE or we can pass second parameter now it return 0
-print(point_d.get("b", 0))
+# check for element before access
+if "a" in point_d:
+    print(point_d["a"])
+
+
+# another way to access dict using key
+
+print(point_d.get("a",0))
 
 del point_d["x"]
 
 print(point_d)
 
-# Itirating Dict
-
+#itirate through the list in python 
 for key in point_d:
-    print(key, point_d[key])
+    print(key , point_d[key])
 
-for key, value in point_d.items():
-    print(key, value)
+#itirate using items
+for key,value in point_d.items():
+    print(key,value)
+
+
+
+    
